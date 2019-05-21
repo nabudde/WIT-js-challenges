@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <head>max, min</head>
+    <body>
+      <p id="demo"></p>
+      <p id="demo1"></p>
+      <p id="demo2"></p>
+      <p id="demo3"></p>
+      <p id="demo4"></p>
+      <p id="demo5"></p>
+      <p id="demo6"></p>
+      <p id="demo7"></p>
+      <p id="demo8"></p>
+
+    </body>
+    <script>
+      // function that returns the max number
+        let number = max(100,200);
+        function max(a,b){
+            if (a>b)
+            return a;
+            else
+            return b
+        }
+        document.getElementById("demo").innerHTML = number;
+        console.log(number);
+      // function that returns true if width is greater than length
+        function isLandscape(width,height){
+          return(width>height);
+        }
+        console.log(isLandscape(300,600));
+        document.getElementById("demo1").innerHTML = isLandscape(300,600);
+      // using math.min & math.max to display min and max
+        var a = 20;
+        var b = 30;
+        var c =Math.min(a,b);
+        var d =Math.max(a,b);
+        console.log(c);
+        console.log(d);
+        document.getElementById("demo2").innerHTML = c;
+        document.getElementById("demo3").innerHTML = d;
+        // using a function to log the maximun
+        function myFunction(a,b){
+          return  Math.min
+        }
+        console.log(myFunction(200,3))
+        document.getElementById("demo4").innerHTML = myFunction(200,3); 
+      //swapping varibles
+        var a ="red";
+        var b = "blue"
+        console.log(a);
+        console.log(b);
+        document.getElementById("demo5").innerHTML = a;
+        document.getElementById("demo6").innerHTML = b;
+        var tmp = a;
+        a = b;
+        b = tmp;
+        console.log(a);
+        console.log(b); 
+        document.getElementById("demo7").innerHTML = a;
+        document.getElementById("demo8").innerHTML = b;
+      // fizzBuzz challenge
+    </script>
