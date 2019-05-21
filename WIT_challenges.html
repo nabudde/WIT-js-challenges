@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<body>
+    <h1>week2 challenge1</h1>
+    <label for="name">Enter your year of birth:</label><br> 
+    <input type="text" name="" id="textinput">
+    <p id="demo"></p>
+    <p id="test"></p>
+    <h1>week2 challenge2</h1>
+    <div id="d"></div>
+    <h1>week3 challenge1</h1>
+    <h1 id=test1></h1>
+</body>
+<script>
+    let age;
+    const text = document.getElementById('textinput')
+    let name;
+    text.addEventListener('input', () => {
+        age = 2019 - parseInt(text.value)
+        document.getElementById("demo").innerHTML = age + " years";
+        if (age <= 18) {
+            name = "You are a Minor";
+        } else if (age <= 36) {
+            name = "You are a Youth";
+        } else {
+            name = "You are an Elder";
+        }
+        document.getElementById("test").innerHTML = name;
+ 
+    })
+    var node = document.createElement("div");       
+    let list = {}
+    for (let i = 0; i < 16; i++) {
+        list[i] = i ** 2;
+    }
+    node.innerText = JSON.stringify(list)
+    console.log(list)
+    document.getElementById('d').appendChild(node);
+//     var even;
+//     var odd;
+//     let list_sort={}
+//     for (i in list_sort)
+//     if (i %2 ==0) {
+//         return  even[i]
+//     }
+//     else{
+//         return odd
+//     }
+//     document.getElementById(test1).innerHTML = 
+// </script>
