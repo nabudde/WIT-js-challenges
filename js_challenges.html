@@ -65,4 +65,52 @@
         document.getElementById("demo7").innerHTML = a;
         document.getElementById("demo8").innerHTML = b;
       // fizzBuzz challenge
+      const output = fizzBuzz(7);
+      console.log(output);
+      function fizzBuzz(input){
+        if (typeof input !== "number")
+        return "Not a Number";
+        if ((input % 3 ==0) && (input % 5 ==0))
+        return "FizzBuzz";
+        if (input % 3 ==0)
+        return "Fizz";
+        if (input % 5 ==0)
+        return "Buzz";
+        else;
+        return input;
+      }
+      // check speed challenge
+      checkSpeed(130)
+      function checkSpeed(speed){
+        const speedLimit = 70;
+        const kmPerPoint = 5;
+        if (speed < speedLimit +kmPerPoint)
+        console.log("ok");
+        else {
+          const points = Math.floor((speed-speedLimit)/kmPerPoint);
+          if (points >= 12)
+            console.log("Licence Suspended");
+            else
+            console.log("points",points);
+        }
+      }
+      // even and odd challenge
+      var i;
+      for (i = 0; i < 11; i++) {
+        if (i%2==0)
+        console.log(i,'even');
+        else
+        console.log(i,'odd');
+      }
+      // truthy and falsy challenge
+      const array=["", false,null,1,2,3];
+      console.log(countTruthy(array));
+      function countTruthy(array){
+        let count = 0;
+        for (let value of array)
+          if (value)
+            count++;
+        return count;
+      }
+       
     </script>
